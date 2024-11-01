@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Data Kendaraan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h3 class="text-primary">
+            <i class="fas fa-folder"></i> Aplikasi Data Kendaraan
+        </h3>
+
+        <!-- Search Form -->
+        <div class="p-3 my-3" style="background-color: #f9e6e6;">
+            <div class="form-group row">
+                <label for="noRegistrasi" class="col-sm-2 col-form-label">No Registrasi</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="noRegistrasi" placeholder="No Registrasi">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="namaPemilik" class="col-sm-2 col-form-label">Nama Pemilik</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="namaPemilik" placeholder="Nama Pemilik">
+                </div>
+            </div>
+            <button class="btn btn-primary" id="searchButton">Search</button>
+            <button class="btn btn-primary" onclick="window.location.href='/kendaraan/add-kendaraan.html'">Add</button>
+        </div>
+
+        <!-- Data Table -->
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="">No</th>
+                    <th class="text-center">No Registrasi</th>
+                    <th class="text-center">Nama Pemilik</th>
+                    <th class="text-center">Merk Kendaraan</th>
+                    <th class="text-center">Tahun Pembuatan</th>
+                    <th class="text-center">Kapasitas</th>
+                    <th class="text-center">Warna</th>
+                    <th class="text-center">Bahan Bakar</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody id="kendaraanTableBody">
+                <!-- Data kendaraan akan dimasukkan di sini oleh JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Modal Confirm Delete -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi Hapus</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Apakah anda yakin menghapus data <span id="deleteNoRegistrasi"></span>?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                        <button id="confirmDeleteButton" class="btn btn-danger">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            function loadKendaraanData(noRegistrasi = '', namaPemilik = '') {
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://localhost:8081/kendaraan/',
+                    data: { noRegistrasi: noRegistrasi, namaPemilik: namaPemilik },
+                    success: function (data) {
+                        $('#kendaraanTableBody').empty();
+                        data.forEach((item, index) => {
+                            const row = `
+                                <tr>
+                                    <td>${index + 1}</td>
+                                    <td>${item.noRegistrasi}</td>
+                                    <td>${item.namaPemilik}</td>
+                                    <td>${item.merkKendaraan}</td>
+                                    <td>${item.tahunPembuatan}</td>
+                                    <td>${item.kapasitasSilinder}</td>
+                                    <td>${item.warnaKendaraan}</td>
+                                    <td>${item.bahanBakar}</td>
+                                    <td>
+                                        <button class="btn btn-info btn-sm">Detail</button>
+                                        <button class="btn btn-warning btn-sm" onclick="window.location.href='/kendaraan/edit-kendaraan.html?edit=true&id=${item.kendaraanId}'">Edit</button>
+                                        <button class="btn btn-danger btn-sm delete-button" data-id="${item.kendaraanId}" data-no-registrasi="${item.noRegistrasi}">Delete</button>
+                                    </td>
+                                </tr>`;
+                            $('#kendaraanTableBody').append(row);
+                        });
+                        attachDeleteEvent();
+                    },
+                    error: function (error) {
+                        alert("Error: " + error.statusText);
+                    }
+                });
+            }
+    
+            $('#searchButton').click(function () {
+                const noRegistrasi = $('#noRegistrasi').val();
+                const namaPemilik = $('#namaPemilik').val();
+                loadKendaraanData(noRegistrasi, namaPemilik);
+            });
+    
+            function attachDeleteEvent() {
+                $('.delete-button').click(function () {
+                    const kendaraanId = $(this).data('id');
+                    const noRegistrasi = $(this).data('no-registrasi');
+                    
+                    // Tampilkan noRegistrasi di modal
+                    $('#deleteNoRegistrasi').text(noRegistrasi);
+    
+                    // Hapus event click lama dan tambahkan event click baru pada tombol konfirmasi
+                    $('#confirmDeleteButton').off('click').on('click', function () {
+                        $.ajax({
+                            type: 'DELETE',
+                            url: 'http://localhost:8081/kendaraan/delete/' + kendaraanId,
+                            success: function () {
+                                loadKendaraanData();
+                                $('#deleteModal').modal('hide');
+                            },
+                            error: function (error) {
+                                alert('Error: ' + error.statusText);
+                            }
+                        });
+                    });
+    
+                    // Tampilkan modal konfirmasi
+                    $('#deleteModal').modal('show');
+                });
+            }
+    
+            // Memuat data kendaraan saat halaman dibuka
+            loadKendaraanData();
+        });
+    </script>
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

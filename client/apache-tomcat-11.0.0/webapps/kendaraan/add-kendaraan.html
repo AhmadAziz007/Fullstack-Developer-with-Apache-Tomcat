@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Kendaraan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h3 class="text-primary">Tambah Data Kendaraan</h3>
+        <div id="message" class="alert alert-success" style="display: none;"></div>
+
+        <form id="addKendaraanForm">
+            <div class="form-group">
+                <label for="noRegistrasi">No. Registrasi Kendaraan</label>
+                <input type="text" id="noRegistrasi" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="namaPemilik">Nama Pemilik</label>
+                <input type="text" id="namaPemilik" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="merkKendaraan">Merk Kendaraan</label>
+                <input type="text" id="merkKendaraan" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Pemilik Kendaraan</label>
+                <textarea id="alamat" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tahunPembuatan">Tahun Pembuatan</label>
+                <input type="number" id="tahunPembuatan" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="kapasitasSilinder">Kapasitas Silinder</label>
+                <input type="number" id="kapasitasSilinder" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="warnaKendaraan">Warna Kendaraan</label>
+                <select id="warnaKendaraan" class="form-control" required>
+                    <option value="">Pilih Warna</option>
+                    <option value="Merah">Merah</option>
+                    <option value="Biru">Biru</option>
+                    <option value="Hitam">Hitam</option>
+                    <option value="Abu-Abu">Abu-Abu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bahanBakar">Bahan Bakar</label>
+                <input type="text" id="bahanBakar" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="button" class="btn btn-secondary"
+                onclick="window.location.href='/kendaraan/index.html'">Kembali</button>
+        </form>
+    </div>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Bundle -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+<script>
+    $(document).ready(function () {
+        $('#addKendaraanForm').submit(function (e) {
+            e.preventDefault();
+            const kendaraanData = {
+                noRegistrasi: $('#noRegistrasi').val(),
+                namaPemilik: $('#namaPemilik').val(),
+                alamat: $('#alamat').val(),
+                merkKendaraan: $('#merkKendaraan').val(),
+                tahunPembuatan: $('#tahunPembuatan').val(),
+                kapasitasSilinder: $('#kapasitasSilinder').val(),
+                warnaKendaraan: $('#warnaKendaraan').val(),
+                bahanBakar: $('#bahanBakar').val()
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:8081/kendaraan/add',
+                contentType: 'application/json',
+                data: JSON.stringify(kendaraanData),
+                success: function () {
+                    $('#message').text("Data kendaraan berhasil ditambahkan").show();
+                    $('#message').removeClass('alert-danger').addClass('alert-success');
+                    $('#addKendaraanForm')[0].reset();
+
+                    setTimeout(function () {
+                        window.location.href = '/kendaraan/index.html';
+                    }, 2000);
+                },
+                error: function (xhr, status, error) {
+                    console.log('Error: ', error);
+                    console.log('Status:', status);
+                    console.log('XHR:', xhr.responseText);
+                    $('message').text("Error:" + xhr.responseText).show();
+                    $('#message').removeClass('alert-success').addClass('alert-danger');
+                }
+            });
+        });
+    });
+</script>
+</body>
+
+</html>

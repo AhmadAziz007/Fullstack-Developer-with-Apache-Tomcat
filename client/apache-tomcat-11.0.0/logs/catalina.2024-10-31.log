@@ -1,0 +1,319 @@
+31-Oct-2024 07:04:58.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.0
+31-Oct-2024 07:04:58.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2024 17:00:16 UTC
+31-Oct-2024 07:04:58.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.0.0
+31-Oct-2024 07:04:58.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 07:04:58.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 07:04:58.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 07:04:58.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 07:04:58.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+31-Oct-2024 07:04:58.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 07:04:58.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 07:04:58.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 07:04:58.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\conf\logging.properties
+31-Oct-2024 07:04:58.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 07:04:58.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Oct-2024 07:04:58.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 07:04:58.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 07:04:58.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 07:04:58.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 07:04:58.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 07:04:58.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+31-Oct-2024 07:04:58.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 07:04:58.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 07:04:58.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\temp
+31-Oct-2024 07:04:58.940 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+31-Oct-2024 07:04:58.960 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+31-Oct-2024 07:04:59.326 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 07:04:59.351 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1035)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:953)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:729)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:469)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1472)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1485)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1033)
+		... 11 more
+31-Oct-2024 07:04:59.353 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [834] milliseconds
+31-Oct-2024 07:04:59.414 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 07:04:59.414 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.0]
+31-Oct-2024 07:04:59.429 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\docs]
+31-Oct-2024 07:04:59.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\docs] has finished in [321] ms
+31-Oct-2024 07:04:59.750 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\examples]
+31-Oct-2024 07:05:00.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\examples] has finished in [863] ms
+31-Oct-2024 07:05:00.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\host-manager]
+31-Oct-2024 07:05:00.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\host-manager] has finished in [48] ms
+31-Oct-2024 07:05:00.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\kendaraan]
+31-Oct-2024 07:05:00.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\kendaraan] has finished in [40] ms
+31-Oct-2024 07:05:00.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\manager]
+31-Oct-2024 07:05:00.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\manager] has finished in [47] ms
+31-Oct-2024 07:05:00.750 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\ROOT]
+31-Oct-2024 07:05:00.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\ROOT] has finished in [39] ms
+31-Oct-2024 07:05:00.794 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1439] milliseconds
+31-Oct-2024 08:40:16.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.0
+31-Oct-2024 08:40:16.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2024 17:00:16 UTC
+31-Oct-2024 08:40:16.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.0.0
+31-Oct-2024 08:40:16.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 08:40:16.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 08:40:16.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 08:40:16.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 08:40:16.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+31-Oct-2024 08:40:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 08:40:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 08:40:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 08:40:16.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\conf\logging.properties
+31-Oct-2024 08:40:16.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 08:40:16.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Oct-2024 08:40:16.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 08:40:16.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 08:40:16.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 08:40:16.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 08:40:16.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 08:40:16.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+31-Oct-2024 08:40:16.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 08:40:16.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0
+31-Oct-2024 08:40:16.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\temp
+31-Oct-2024 08:40:16.780 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+31-Oct-2024 08:40:16.790 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+31-Oct-2024 08:40:17.138 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 08:40:17.159 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1035)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:953)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:729)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:469)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1472)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1485)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1033)
+		... 11 more
+31-Oct-2024 08:40:17.160 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [810] milliseconds
+31-Oct-2024 08:40:17.213 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 08:40:17.214 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.0]
+31-Oct-2024 08:40:17.225 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\docs]
+31-Oct-2024 08:40:17.561 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\docs] has finished in [336] ms
+31-Oct-2024 08:40:17.562 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\examples]
+31-Oct-2024 08:40:18.676 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\examples] has finished in [1,114] ms
+31-Oct-2024 08:40:18.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\host-manager]
+31-Oct-2024 08:40:18.720 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\host-manager] has finished in [43] ms
+31-Oct-2024 08:40:18.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\kendaraan]
+31-Oct-2024 08:40:18.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\kendaraan] has finished in [36] ms
+31-Oct-2024 08:40:18.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\manager]
+31-Oct-2024 08:40:18.804 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\manager] has finished in [48] ms
+31-Oct-2024 08:40:18.804 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\ROOT]
+31-Oct-2024 08:40:18.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\kendaraan.apache.tomcat\apache-tomcat-11.0.0-windows-x64\apache-tomcat-11.0.0\webapps\ROOT] has finished in [32] ms
+31-Oct-2024 08:40:18.841 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1678] milliseconds
+31-Oct-2024 10:32:55.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.0
+31-Oct-2024 10:32:55.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2024 17:00:16 UTC
+31-Oct-2024 10:32:55.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.0.0
+31-Oct-2024 10:32:55.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 10:32:55.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 10:32:55.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 10:32:55.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 10:32:55.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+31-Oct-2024 10:32:55.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 10:32:55.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:32:55.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:32:55.405 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\conf\logging.properties
+31-Oct-2024 10:32:55.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 10:32:55.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Oct-2024 10:32:55.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 10:32:55.407 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 10:32:55.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 10:32:55.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 10:32:55.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 10:32:55.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+31-Oct-2024 10:32:55.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:32:55.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:32:55.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\temp
+31-Oct-2024 10:32:55.507 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+31-Oct-2024 10:32:55.533 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+31-Oct-2024 10:32:55.847 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 10:32:55.871 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1035)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:953)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:729)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:469)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1472)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1485)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1033)
+		... 11 more
+31-Oct-2024 10:32:55.872 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [695] milliseconds
+31-Oct-2024 10:32:55.931 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 10:32:55.931 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.0]
+31-Oct-2024 10:32:55.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\docs]
+31-Oct-2024 10:32:56.278 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\docs] has finished in [331] ms
+31-Oct-2024 10:32:56.278 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\examples]
+31-Oct-2024 10:32:57.378 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\examples] has finished in [1,099] ms
+31-Oct-2024 10:32:57.378 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\host-manager]
+31-Oct-2024 10:32:57.428 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\host-manager] has finished in [50] ms
+31-Oct-2024 10:32:57.429 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\kendaraan]
+31-Oct-2024 10:32:57.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\kendaraan] has finished in [38] ms
+31-Oct-2024 10:32:57.468 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\manager]
+31-Oct-2024 10:32:57.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\manager] has finished in [43] ms
+31-Oct-2024 10:32:57.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\ROOT]
+31-Oct-2024 10:32:57.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\ROOT] has finished in [30] ms
+31-Oct-2024 10:32:57.548 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1675] milliseconds
+31-Oct-2024 10:34:06.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.0
+31-Oct-2024 10:34:06.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2024 17:00:16 UTC
+31-Oct-2024 10:34:06.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.0.0
+31-Oct-2024 10:34:06.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 10:34:06.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 10:34:06.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 10:34:06.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 10:34:06.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+31-Oct-2024 10:34:06.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 10:34:06.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:34:06.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:34:06.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\conf\logging.properties
+31-Oct-2024 10:34:06.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 10:34:06.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Oct-2024 10:34:06.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 10:34:06.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 10:34:06.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 10:34:06.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 10:34:06.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 10:34:06.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+31-Oct-2024 10:34:06.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:34:06.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 10:34:06.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\temp
+31-Oct-2024 10:34:06.461 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+31-Oct-2024 10:34:06.469 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+31-Oct-2024 10:34:06.763 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 10:34:06.782 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1035)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:953)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:729)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:469)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1472)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1485)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1033)
+		... 11 more
+31-Oct-2024 10:34:06.784 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [515] milliseconds
+31-Oct-2024 10:34:06.835 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 10:34:06.836 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.0]
+31-Oct-2024 10:34:06.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\docs]
+31-Oct-2024 10:34:07.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\docs] has finished in [300] ms
+31-Oct-2024 10:34:07.147 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\examples]
+31-Oct-2024 10:34:07.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\examples] has finished in [460] ms
+31-Oct-2024 10:34:07.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\host-manager]
+31-Oct-2024 10:34:07.657 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\host-manager] has finished in [50] ms
+31-Oct-2024 10:34:07.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\kendaraan]
+31-Oct-2024 10:34:07.693 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\kendaraan] has finished in [35] ms
+31-Oct-2024 10:34:07.694 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\manager]
+31-Oct-2024 10:34:07.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\manager] has finished in [48] ms
+31-Oct-2024 10:34:07.743 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\ROOT]
+31-Oct-2024 10:34:07.773 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\ROOT] has finished in [30] ms
+31-Oct-2024 10:34:07.779 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [993] milliseconds
+31-Oct-2024 21:35:45.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.0
+31-Oct-2024 21:35:45.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2024 17:00:16 UTC
+31-Oct-2024 21:35:45.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.0.0
+31-Oct-2024 21:35:45.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.1+8-16
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 21:35:45.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 21:35:45.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\conf\logging.properties
+31-Oct-2024 21:35:45.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 21:35:45.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Oct-2024 21:35:45.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 21:35:45.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 21:35:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 21:35:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 21:35:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 21:35:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+31-Oct-2024 21:35:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 21:35:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0
+31-Oct-2024 21:35:45.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\temp
+31-Oct-2024 21:35:45.831 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+31-Oct-2024 21:35:45.863 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+31-Oct-2024 21:35:46.244 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:35:46.283 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [981] milliseconds
+31-Oct-2024 21:35:46.343 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 21:35:46.343 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.0]
+31-Oct-2024 21:35:46.355 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\docs]
+31-Oct-2024 21:35:46.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\docs] has finished in [347] ms
+31-Oct-2024 21:35:46.703 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\examples]
+31-Oct-2024 21:35:47.703 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\examples] has finished in [1,000] ms
+31-Oct-2024 21:35:47.705 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\host-manager]
+31-Oct-2024 21:35:47.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\host-manager] has finished in [47] ms
+31-Oct-2024 21:35:47.753 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\kendaraan]
+31-Oct-2024 21:35:47.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\kendaraan] has finished in [37] ms
+31-Oct-2024 21:35:47.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\manager]
+31-Oct-2024 21:35:47.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\manager] has finished in [37] ms
+31-Oct-2024 21:35:47.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\ROOT]
+31-Oct-2024 21:35:47.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\project\test-fullstackdeveloper\client\apache-tomcat-11.0.0\webapps\ROOT] has finished in [28] ms
+31-Oct-2024 21:35:47.860 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:35:47.891 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1605] milliseconds
